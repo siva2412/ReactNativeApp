@@ -523,7 +523,7 @@ const Enrollment = () => {
         {
           text: "Go to Settings",
           onPress: () => {
-            Linking.openSettings();
+            Linking.openSettings(); // Therse for opening settings
           },
         },
         {
