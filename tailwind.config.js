@@ -12,10 +12,17 @@ module.exports = {
         background: '#F3F4F6',
         textPrimary: '#111827',
         textSecondary: '#6B7280',
+        textTertiary: '#EBEBF599',
+
+        dashboardGradient1: '#FF7170',
+        dashboardGradient2: '#9F1110',
+        dashboardGradient3: '#B81614',
+        dashboardGradient4: '#F9030783',
       },
       borderRadius: {
         '5xl': 40,
-        '6xl': 50,
+        '6xl': 45,
+        '7xl': 50,
       }
     },
   },

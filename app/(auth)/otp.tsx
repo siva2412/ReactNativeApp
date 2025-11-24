@@ -1,7 +1,7 @@
 import { useRouter } from 'expo-router'
 import React, { useState } from 'react'
 import { Alert, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import { storeData } from '../../utils/storage'
+import { getData, storeData } from '../../utils/storage'
 
 const OTP = () => {
   const router = useRouter();
@@ -28,13 +28,19 @@ const OTP = () => {
         // In real app, verify with backend
         
         // Store authentication token
+        const isEnrolled: boolean = await getData('isEnrolled') ?? false;
         const token = 'demo_auth_token_' + Date.now();
         await storeData('token', token);
         
         setIsLoading(false);
-        
+
+        if(isEnrolled === true ){ 
+
+          router.replace('/(tabs)/home');
+        }else{
+          router.replace('/(screen)/profile/termsandcondition');
+        }
         // Navigate to home
-        router.replace('/(tabs)/home');
       } catch (error) {
         setIsLoading(false);
         Alert.alert('Error', 'Failed to verify OTP. Please try again.');
