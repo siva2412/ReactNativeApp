@@ -14,7 +14,7 @@ export default function Index() {
         
         if (token) {
           // Token exists, go to home
-          router.replace("/enrollmentscreen/enrollment");
+          router.replace("/(tabs)/home");
         } else {
           // No token, go to login
           router.replace("/(auth)/login");

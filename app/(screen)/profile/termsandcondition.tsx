@@ -26,7 +26,7 @@ const TermsAndCondition = () => {
 
     setTimeout(() => {
       LoaderService.hideLoader();
-      router.push('/(screen)/enrollment/enrollment');
+      router.push('/(screen)/enrollmentscreen/enrollment');
     }, 1500);
   };
 

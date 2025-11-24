@@ -1,23 +1,70 @@
-import { Ionicons } from '@expo/vector-icons';
+import { Icons } from '@/constants/Icons';
 import { Tabs } from 'expo-router';
+import { Image, StatusBar } from 'react-native';
 
 export default function TabLayout() {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: '#4F46E5',
-        headerShown: false,
-      }}
-    >
-      <Tabs.Screen
-        name="home"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'home' : 'home-outline'} color={color} size={24} />
-          ),
+    <>
+      <StatusBar barStyle="dark-content" />
+      <Tabs
+        screenOptions={{
+          headerShown: false,
+          tabBarStyle: {
+            backgroundColor: '#ab1411',
+            borderTopWidth: 0,
+          },
+          tabBarActiveTintColor: '#ffffff',
+          tabBarInactiveTintColor: '#ffffff',
+          tabBarLabelStyle: {fontSize: 14,fontWeight: '500' ,alignItems: 'center'},
+          tabBarItemStyle: {
+            flex:1, justifyContent: 'center',
+            alignItems: 'center',
+          }
         }}
-      />
-    </Tabs>
+
+      >
+        <Tabs.Screen
+          name="home"
+
+          options={{
+            title: 'Home',
+            tabBarIcon: () => (
+              <Image source={Icons.home} style={{ width: 24, height: 24 }} />
+            ),
+          }}
+        />
+        
+        <Tabs.Screen
+          name="bonus"
+
+          options={{
+            title: 'Bonus',
+            tabBarIcon: () => (
+              <Image source={Icons.bonus} style={{ width: 24, height: 24 }} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="upiredemption"
+
+          options={{
+            title: 'UPI',
+            tabBarIcon: () => (
+              <Image source={Icons.upi} style={{ width: 24, height: 24 }} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="rewards"
+
+          options={{
+            title: 'Rewards',
+            tabBarIcon: () => (
+              <Image source={Icons.rewards} style={{ width: 24, height: 24 }} />
+            ),
+          }}
+        />
+      </Tabs>
+    </>
   );
 }
