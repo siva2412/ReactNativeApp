@@ -6,7 +6,7 @@ import Budweiser from '@/assets/Icons/Budweiser.png';
 import Corona from '@/assets/Icons/Corona.png';
 import Hoegaarden from '@/assets/Icons/Hoegaarden.png';
 import Magnum from '@/assets/Icons/Magnum.png';
-
+import point from '@/assets/Icons/point.png';
 
 
 export const Icons = {
@@ -18,4 +18,5 @@ export const Icons = {
   corona: Corona,
   hoegaarden: Hoegaarden,
   budweiser: Budweiser,
+  point: point,
 };

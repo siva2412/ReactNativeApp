@@ -1,17 +1,27 @@
 import { Icons } from '@/constants/Icons';
 import { Tabs } from 'expo-router';
-import { Image, StatusBar } from 'react-native';
+import { Image, StatusBar, useColorScheme } from 'react-native';
 
 export default function TabLayout() {
+
+   const theme = useColorScheme();
+
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      {/* <StatusBar barStyle="dark-content" /> */}
+      <StatusBar
+        barStyle={theme === "dark" ? "light-content" : "dark-content"}
+        backgroundColor={theme === "dark" ? "#000" : "#fff"}
+        animated={true}
+        translucent={true}
+      />
       <Tabs
         screenOptions={{
           headerShown: false,
           tabBarStyle: {
             backgroundColor: '#ab1411',
             borderTopWidth: 0,
+            // height: 60,
           },
           tabBarActiveTintColor: '#ffffff',
           tabBarInactiveTintColor: '#ffffff',
@@ -19,7 +29,8 @@ export default function TabLayout() {
           tabBarItemStyle: {
             flex:1, justifyContent: 'center',
             alignItems: 'center',
-          }
+          },
+          animation: "shift",
         }}
 
       >

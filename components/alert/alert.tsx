@@ -46,8 +46,8 @@ export default function AlertModal({
               <TouchableOpacity
                 key={index}
                 onPress={button.onPress}
-                className={`py-3 rounded-xl w-[48%] ${
-                  button.style || "bg-blue-600"
+                className={`py-4 rounded-2xl w-[48%] ${
+                  button.style || "bg-primary"
                 }`}
               >
                 <Text className="text-center text-white font-semibold">

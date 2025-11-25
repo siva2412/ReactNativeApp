@@ -28,7 +28,7 @@ const BrandCard: React.FC<BrandCardProps> = ({
       <View style={{ width: 60, height: 80 }} className="">
         <Svg width={80} height={80} className=''> 
           <Defs>
-            <LinearGradient id={`grad-${cases}-${logo}`} x1="0" y1="0" x2="1" y2="1">
+            <LinearGradient id={`grad-${cases}-${logo}`} x1="1" y1="0" x2="2" y2="0">
               <Stop offset="0%" stopColor={gradientColors[0]} />
               <Stop offset="100%" stopColor={gradientColors[1]} />
             </LinearGradient>
