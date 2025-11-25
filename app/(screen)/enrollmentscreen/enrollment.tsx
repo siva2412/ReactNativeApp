@@ -277,7 +277,8 @@ const Enrollment = () => {
           setFilteredOptions(filtered);
         };
 
-        return (<View className='mb-4'>
+        return (
+        <View className='mb-4'>
           <Text className='absolute -top-1 left-5 bg-white px-1 z-10 font-semibold text-gray-700 text-1xl' >{label}</Text>
           <Pressable>
             <TouchableOpacity
@@ -360,7 +361,8 @@ const Enrollment = () => {
               {errors[name]?.message}
             </Text>
           )}
-        </View>)
+        </View>
+        )
       }}
     />
 

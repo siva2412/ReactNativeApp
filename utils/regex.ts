@@ -35,4 +35,10 @@ export const commonRegex = {
 
   // 🌐 URL
   url: /^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/[\w-]*)*\/?$/,
+
+  // UPI ID (basic format)
+  upi: /^[\w.-]+@[\w.-]+$/,
+
+  // UPI ID (more strict format)
+  strictUpi: /^[a-zA-Z0-9.\-_]{2,256}@[a-zA-Z]{2,64}$/,
 };
