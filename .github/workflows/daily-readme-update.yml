@@ -25,8 +25,5 @@ jobs:
           git config --global user.email "dsivasankar180@gmail.com"
           git add README.md
           git commit -m "Auto update README on $TODAY" || echo "No changes"
-           # Pull latest changes from master to avoid push rejection
-          git pull --rebase origin master
          
-          # Push after updating
           git push origin master
