@@ -2,8 +2,10 @@ import { AlertProvider } from "@/components/alert/AlertProvider";
 import { AppLoaderProvider } from "@/components/loader/LoaderProvider";
 import { Stack } from "expo-router";
 import { Text, TextInput, useColorScheme } from "react-native";
+import 'react-native-reanimated';
 import { SafeAreaView } from "react-native-safe-area-context";
 import './../global.css';
+
 // Extend Text and TextInput types to support defaultProps
 interface TextWithDefaultProps extends Text {
   defaultProps?: any;
@@ -30,6 +32,7 @@ export default function RootLayout() {
             <Stack.Screen name="(auth)" options={{ headerShown: false }} />
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="(screen)" options={{ headerShown: false }} />
+            {/* <Stack.Screen name="(cart)" options={{ headerShown: false }} /> */}
           </Stack>
         </AlertProvider>
       </AppLoaderProvider>

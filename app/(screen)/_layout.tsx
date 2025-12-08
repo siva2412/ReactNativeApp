@@ -5,8 +5,8 @@ export default function ScreenLayout() {
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="enrollmentscreen" />
       <Stack.Screen name="profile" />
-      <Stack.Screen name="orders/cashcheckout" />
-      <Stack.Screen name="orders/targetandachivementdetails" />
+      <Stack.Screen name="orders" />
+      <Stack.Screen name="cart" />
     </Stack>
   );
 }
