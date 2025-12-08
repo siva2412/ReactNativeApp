@@ -1,6 +1,7 @@
 import { useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 import { ActivityIndicator, Text, View } from "react-native";
+import 'react-native-reanimated';
 import { getData } from "../utils/storage";
 
 export default function Index() {

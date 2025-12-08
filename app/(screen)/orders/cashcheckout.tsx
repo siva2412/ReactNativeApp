@@ -143,7 +143,7 @@ const CashCheckout = () => {
       >
         {/* <> */}
 
-        <View className='flex-1 mb-5 justify-end items-end bg-black/50 h-[70%]'>
+        <View className='flex-1  justify-end items-end bg-black/50 h-[70%]'>
           <View className='bg-primary px-4 py-12 rounded-t-5xl items-center justify-center w-full relative'>
 
             <TouchableOpacity 

@@ -170,32 +170,32 @@ const Home = () => {
       {/* Burger Menu Options */}
       <Modal visible={burgerMenuVisible} onRequestClose={() => setBurgerMenuVisible(false)} transparent animationType="slide">
         <View className='flex-1 bg-primary ' style={{ paddingTop: 10,marginTop:50 }}>
-          <View className="px-4 py-4 mt-8" onTouchStart={() => setBurgerMenuVisible(false)}>
+          <View className="px-4 py-1 mt-0" onTouchStart={() => setBurgerMenuVisible(false)}>
             <Ionicons name="close-outline" size={30} color="white" />
           </View>
           <View className=" px-10 mt-6">
-            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); }}>
+            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); router.push('/(screen)/profile/myprofile'); }}>
               <Text className="text-white text-2xl ml-4">Profile</Text>
             </TouchableOpacity>
-            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); }}>
+            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); router.push('/(screen)/profile/abouttheprogram'); }}>
               <Text className="text-white text-2xl ml-4">About the Program</Text>
             </TouchableOpacity>
-            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); }}>
+            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false);  router.push('/(screen)/profile/trackrewards'); }}>
               <Text className="text-white text-2xl ml-4">Track Rewards</Text>
             </TouchableOpacity>
-            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); }}>
+            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); router.push('/(screen)/profile/ledger'); }}>
               <Text className="text-white text-2xl ml-4">Ledger</Text>
             </TouchableOpacity>
-            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); }}>
+            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); router.push('/(screen)/profile/faq'); }}>
               <Text className="text-white text-2xl ml-4">FAQS</Text>
             </TouchableOpacity>
-            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); }}>
+            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); router.push('/(screen)/profile/profiletandc'); }}>
               <Text className="text-white text-2xl ml-4">Terms & Conditions</Text>
             </TouchableOpacity>
-            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); }}>
+            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); router.push('/(screen)/profile/privacypolicy'); }}>
               <Text className="text-white text-2xl ml-4">Privacy Policy</Text>
             </TouchableOpacity>
-            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); }}>
+            <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); router.push('/(screen)/profile/customerservices'); }}>
               <Text className="text-white text-2xl ml-4">Customer Service</Text>
             </TouchableOpacity>
             <TouchableOpacity className="mb-6 flex-row items-center" onPress={() => { setBurgerMenuVisible(false); handleLogout(); }}>

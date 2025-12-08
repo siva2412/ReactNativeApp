@@ -1,0 +1,169 @@
+{
+  "rewards_home": {
+    "summary": {
+      "points_earned": 2500,
+      "points_redeemed": 500,
+      "points_balance": 2000
+    },
+    "categories": [
+      {
+        "id": 1,
+        "name": "Gift Card",
+        "image": "reward1",
+        "key": "gift_cards"
+      },
+      {
+        "id": 2,
+        "name": "Shopping",
+        "image": "reward4",
+        "key": "shopping"
+      },
+      {
+        "id": 3,
+        "name": "Travel",
+        "image": "reward2",
+        "key": "travel"
+      },
+      {
+        "id": 4,
+        "name": "Jewellery",
+        "image": "reward5",
+        "key": "jewellery"
+      },
+      {
+        "id": 5,
+        "name": "Entertainment",
+        "image": "reward3",
+        "key": "entertainment"
+      },
+      {
+        "id": 6,
+        "name": "Electronics",
+        "image": "reward6",
+        "key": "electronics"
+      }
+    ]
+  },
+
+  "gift_cards": [
+    {
+      "id": 101,
+      "brand": "Amazon Pay",
+      "image": "amazon_pay.png",
+      "min_value": 250,
+      "max_value": 5000
+    },
+    {
+      "id": 102,
+      "brand": "I Can Stay",
+      "image": "icanstay.png",
+      "min_value": 250,
+      "max_value": 3000
+    },
+    {
+      "id": 103,
+      "brand": "Hidesign",
+      "image": "hidesign.png",
+      "min_value": 500,
+      "max_value": 5000
+    },
+    {
+      "id": 104,
+      "brand": "Myntra",
+      "image": "myntra.png",
+      "min_value": 250,
+      "max_value": 2000
+    }
+  ],
+
+  "gift_card_details": [
+    {
+      "id": 101,
+      "brand": "Amazon Pay",
+      "image": "amazon_pay.png",
+      "title": "Amazon Pay Gift Card",
+      "min_value": 250,
+      "max_value": 5000,
+      "description": "Use your Amazon Pay Gift Card to shop across millions of products on Amazon.in including electronics, fashion, groceries, and more.",
+      "how_to_redeem": [
+        "Open Amazon App or website.",
+        "Go to 'Amazon Pay' section.",
+        "Click 'Add Gift Card'.",
+        "Enter your 14-digit gift card code.",
+        "Balance will be added instantly."
+      ],
+      "terms_and_conditions": [
+        "Valid only on Amazon.in.",
+        "Cannot be refunded or transferred.",
+        "Multiple gift cards can be added.",
+        "Validity depends on brand policy."
+      ],
+      "cta_text": "Add to Cart"
+    },
+    {
+      "id": 102,
+      "brand": "I Can Stay",
+      "image": "icanstay.png",
+      "title": "I Can Stay Gift Voucher",
+      "min_value": 250,
+      "max_value": 3000,
+      "description": "Enjoy luxurious stay experiences at premium hotels across India with I Can Stay gift vouchers.",
+      "how_to_redeem": [
+        "Visit icanstay.com.",
+        "Select your preferred stay option.",
+        "Apply gift card voucher code during checkout.",
+        "Your booking will be confirmed instantly."
+      ],
+      "terms_and_conditions": [
+        "Valid at participating hotels only.",
+        "Cannot be redeemed for cash.",
+        "Advance booking may be required.",
+        "Validity depends on the voucher."
+      ],
+      "cta_text": "Add to Cart"
+    },
+    {
+      "id": 103,
+      "brand": "Hidesign",
+      "image": "hidesign.png",
+      "title": "Hidesign Gift Card",
+      "min_value": 500,
+      "max_value": 5000,
+      "description": "Shop premium leather bags, wallets, belts, and accessories from Hidesign stores or online.",
+      "how_to_redeem": [
+        "Visit hidesign.com.",
+        "Add your favorite products to cart.",
+        "Enter gift card code at checkout.",
+        "Complete your purchase."
+      ],
+      "terms_and_conditions": [
+        "Applicable online and in selected retail stores.",
+        "Cannot be clubbed with certain discounts.",
+        "Gift card cannot be redeemed for cash."
+      ],
+      "cta_text": "Add to Cart"
+    },
+    {
+      "id": 104,
+      "brand": "Myntra",
+      "image": "myntra.png",
+      "title": "Myntra Shopping Gift Card",
+      "min_value": 250,
+      "max_value": 2000,
+      "description": "Redeem stress-free fashion shopping on Myntra across thousands of brands.",
+      "how_to_redeem": [
+        "Go to myntra.com or Myntra app.",
+        "Login to your account.",
+        "Add items to cart.",
+        "At checkout, select 'Gift Card' and enter the code."
+      ],
+      "terms_and_conditions": [
+        "Applicable across most products with few brand exclusions.",
+        "Cannot be converted to cash.",
+        "Multiple cards can be used in one order.",
+        "Expiry depends on the issuing brand."
+      ],
+      "cta_text": "Add to Cart"
+    }
+  ]
+}
